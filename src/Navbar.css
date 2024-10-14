@@ -1,0 +1,177 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  font-family: arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.banner {
+  padding-top:1rem ;
+  width: 200px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputField {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+  background: #fff;
+  min-height: 44px;
+  display: flex;
+  border: 1px solid transparent;
+}
+
+input {
+  caret-color: red;
+  padding-left: 0.5rem;
+}
+
+/* remove outline from all divs */
+*:focus {
+  outline: none;
+}
+
+.topBar {
+  font-size: 2rem;
+}
+
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  flex: 1;
+}
+
+
+.productsImg{
+  height:200px;
+  width:200px;
+  border-radius:10px;
+  border:4px solid white;
+  object-fit: cover;
+  background-image: none;
+  mix-blend-mode: multiply;
+  margin: 1rem 5rem 0 5rem;
+  box-shadow: 5px 5px 10px 2px lightgray;
+  transition: transform 1s;
+}
+
+.productsImg:hover {
+  transform: scale(105%);
+  border: 4px solid white;
+}
+
+.footer{
+  background-color: black;
+  line-height: 0.3rem;
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100vw;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.icons a {
+  transition: transform .2s;
+}
+
+.icons a:hover {
+  transform: scale(110%);
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.developer a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  background-color: black;
+  text-decoration: none !important;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none !important;
+}
+
+.footer h5 {
+  text-decoration: underline;
+}
+
+/* When the screen size is 768px or bigger */
+@media screen and (min-width: 768px) {
+  .banner{
+    width: 800px;
+    padding-top:1rem ;
+  }
+}
+
+/* When the screen size is 370px or smaller */
+@media screen and (max-width:570px){
+.footer{
+  display: block;
+  padding-top: 0.5rem;
+}
+
+.contacts {
+  margin-top: 2rem;
+}
+}
+
+/* When the screen size is 370px or smaller */
+@media screen and (max-width:370px) {
+  .inputField {
+    max-width: 150px;
+    font-size: 15px;
+  }
+
+  .banner{
+  width: 190px;
+  }
+  .productsImg {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+      box-shadow: 2px 2px 5px 1px lightgray;
+  }
+}
