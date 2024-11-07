@@ -85,7 +85,15 @@ const productList = filteredData.map(product => (
 </article>))
 
 
+const handleFilterChange = (e) => {
+  const value = e.target.value;
+  setFilterValue(value)
 
+const filtered = data.filter(item => item.name.toLocaleLowerCase().includes(value.toLocaleLowerCase()));
+
+setFilteredData(filtered)
+
+}
 
   return (
     <>
