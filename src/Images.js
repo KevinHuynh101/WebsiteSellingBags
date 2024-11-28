@@ -103,7 +103,9 @@ setFilteredData(filtered)
     value={filterValue}
     onChange={handleFilterChange}
     />
-
+    <div className='list'>
+      {productList}
+    </div>
     </>
   )
 }
