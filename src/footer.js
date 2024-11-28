@@ -30,7 +30,9 @@ function footer() {
     <a  href='tel: O775858585'>O775858585</a>
     </div>
     </div>
-    
+    <div className='developer'>
+       <a href='mailto: pharisnjuguna22@gmail.com'><p className='web-by'>Website by fariq</p></a>
+    </div>
   </article>
     </>
   )
